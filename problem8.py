@@ -9,12 +9,12 @@ def multiply_all(x):
     product=1
     number_as_list=[int(i) for i in str(x)]
     for digit in range(1,len(number_as_list)):
-        product*=digit
+        # product*=number_as_list[digit]
         for i in range(0,14):
             if digit-i<13:
                 product*=number_as_list[digit+i]
-            else:
-                product+=1
+            # else:
+            #     product+=1
     return product
 
 print(multiply_all(number))
